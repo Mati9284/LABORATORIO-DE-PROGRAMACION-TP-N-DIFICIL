@@ -1,0 +1,20 @@
+.contenedor {
+    display: flex;
+    align-items: center;
+}
+
+.warp {
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.space-between {
+    justify-content: space-between;
+}
