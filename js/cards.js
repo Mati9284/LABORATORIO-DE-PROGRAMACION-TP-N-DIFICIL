@@ -29,7 +29,7 @@ let datos_html = "";
 datos.forEach(datos_foreach => {
     if (datos_foreach["imagen"] === "") {
         datos_html += `
-        <article>
+        <article class="contenedor column cards">
             <h3>${datos_foreach["titulo"]}</h3>
             <p>${datos_foreach["descripcion"]}</p>
         </article>
@@ -37,7 +37,7 @@ datos.forEach(datos_foreach => {
     }
     else {
         datos_html += `
-        <article>
+        <article class="contenedor column cards">
             <h3>${datos_foreach["titulo"]}</h3>
             <p>${datos_foreach["descripcion"]}</p>
             <img src="${datos_foreach["imagen"]}" alt="${datos_foreach["titulo"]}">
