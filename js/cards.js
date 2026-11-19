@@ -10,7 +10,7 @@ const datos = [
         Muy felíz cumpleaños que la pases muy lindo :D
         Soy tu esclavo
         `,
-        imagen: "",
+        imagen: "Logo caro.svg",
     },
     {
         titulo: "",
@@ -40,7 +40,7 @@ datos.forEach(datos_foreach => {
         <article class="contenedor column cards">
             <h3>${datos_foreach["titulo"]}</h3>
             <p>${datos_foreach["descripcion"]}</p>
-            <img src="${datos_foreach["imagen"]}" alt="${datos_foreach["titulo"]}">
+            <img src="assets/img/${datos_foreach["imagen"]}" alt="${datos_foreach["titulo"]}">
         </article>
     `;
     }
