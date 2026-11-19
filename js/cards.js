@@ -22,8 +22,16 @@ const datos = [
     {
         titulo: `Gonzalez Mara 4°7`,
         descripcion: `
-        Hola, profe. Soy Benja de 4°7. Le quiero decir feliz cumpleaños. Es una gran profe y gran persona. En serio la quiero un montón; sos la mejor profe que tuve en el transcurso de la secu, en sí. En serio, gracias por todo, profe. Gracias a usted me uní a Informática; sos de mis profes favoritas. Pero bueno, ¡feliz cumple, profe! Pásala genial hoy, en serio. 💗💗💗🫰😭😭💗💗💗💗🩷🩷🩷🩷🍊🩷🫰🫰🩷💗💗💗💗🩷🫰🐸🐸💚💚💚💚☘️☘️☘️`,
+        FELIZ CUMPLE PROFEEE ;33 💗
+        Quiero aprovechar la ocasión para recordarle lo importante que es para nosotros los alumnos y para toda la escuela en general (A veces pareciera como si fueras la única persona que puede encargarse de la institución) y estamos todos muy agradecidos por la gran profe y persona que es ;33 
+        Espero que la pase muy bien en su día especial, TE AMAMOS MUCHO CAROOO 🗣️🗣️🗣️💗💗💗‼️‼️‼️‼️`,
         imagen: `Mara.jpeg`,
+    },
+    {
+        titulo: `Ciro Marchiori 5to 5ta `,
+        descripcion: `Feliz cumple profe! Muchas gracias por enseñarme las bases de una de mis cosas favoritas, esta siendo la programacion!`,
+        imagen: ``,
+        vuelta: true,
     },
     {
         titulo: `Matías Luppini 5°5`,
@@ -36,7 +44,6 @@ const datos = [
         Gracias por ayudarnos a todos sin pedirlo :D
         `,
         imagen: `Luppini.png`,
-        vuelta: true,
     },
 ];
 
