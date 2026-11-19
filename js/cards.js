@@ -14,7 +14,7 @@ const datos = [
         imagen: `Rebecca.png`,
     },
     {
-        titulo: ``,
+        titulo: `Benja`,
         descripcion: ``,
         imagen: `Benja.jpeg`,
         vuelta: true,
