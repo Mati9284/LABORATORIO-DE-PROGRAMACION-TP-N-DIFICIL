@@ -107,6 +107,7 @@ footer section {
 
 @media (max-width:1000px) {
     .cards {
+        padding: 0px 0px 0px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
