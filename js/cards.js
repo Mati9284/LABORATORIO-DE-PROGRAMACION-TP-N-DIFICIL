@@ -2,17 +2,6 @@ const contenedor_cards = document.querySelector("#contenedor-cards");
 
 const datos = [
     {
-        titulo: `Matías Luppini 5°5`,
-        descripcion: `Caro sos invencible, audaz, 
-        vigorosa, encantadora, abrumadora,
-        espléndida, apasionada, bella y 
-        poderosa (hollow knight 2008)
-        Muy felíz cumpleaños que la pases muy lindo :D
-        Soy tu esclavo.
-        `,
-        imagen: `Luppini.png`,
-    },
-    {
         titulo: `Cejas Molina Rebecca 5to 5ta`,
         descripcion: `
         Feliz cumple Caro! 🎉
@@ -24,6 +13,31 @@ const datos = [
         Que pases un día hermoso! Te quiero un montón!! 🤍🤍`,
         imagen: `Rebecca.png`,
     },
+    {
+        titulo: ``,
+        descripcion: ``,
+        imagen: `Benja.jpeg`,
+        vuelta: true,
+    },
+    {
+        titulo: `Gonzalez Mara 4°7`,
+        descripcion: `
+        Hola, profe. Soy Benja de 4°7. Le quiero decir feliz cumpleaños. Es una gran profe y gran persona. En serio la quiero un montón; sos la mejor profe que tuve en el transcurso de la secu, en sí. En serio, gracias por todo, profe. Gracias a usted me uní a Informática; sos de mis profes favoritas. Pero bueno, ¡feliz cumple, profe! Pásala genial hoy, en serio. 💗💗💗🫰😭😭💗💗💗💗🩷🩷🩷🩷🍊🩷🫰🫰🩷💗💗💗💗🩷🫰🐸🐸💚💚💚💚☘️☘️☘️`,
+        imagen: `Mara.jpeg`,
+    },
+    {
+        titulo: `Matías Luppini 5°5`,
+        descripcion: `Caro sos invencible, audaz, 
+        vigorosa, encantadora, abrumadora,
+        espléndida, apasionada, bella y 
+        poderosa (hollow knight 2008)
+        Muy felíz cumpleaños que la pases muy lindo :D
+        Soy tu esclavo. Sos una dios Caro para todos y una segunda mami
+        Gracias por ayudarnos a todos sin pedirlo :D
+        `,
+        imagen: `Luppini.png`,
+        vuelta: true,
+    },
 ];
 
 let datos_html = "";
@@ -31,17 +45,37 @@ let datos_html = "";
 datos.forEach(datos_foreach => {
     if (datos_foreach["imagen"] === "") {
         datos_html += `
-        <article class="contenedor column cards">
-            <h3>${datos_foreach["titulo"]}</h3>
-            <p>${datos_foreach["descripcion"]}</p>
+        <article class="contenedor space-evenly align-center cards">
+            <div>
+                <h3>${datos_foreach["titulo"]}</h3>
+                <p>${datos_foreach["descripcion"]}</p>
+            </div>
+        </article>
+    `;
+    } else if (datos_foreach["titulo"] === "" || datos_foreach["descripcion"] === "") {
+        datos_html += `
+        <article class="contenedor space-evenly align-center cards">
+            <img src="assets/img/${datos_foreach["imagen"]}" alt="${datos_foreach["titulo"]}">
         </article>
     `;
     }
-    else {
+    else if (datos_foreach["vuelta"]) {
         datos_html += `
-        <article class="contenedor column cards">
-            <h3>${datos_foreach["titulo"]}</h3>
-            <p>${datos_foreach["descripcion"]}</p>
+        <article class="contenedor space-evenly align-center cards">
+            <img src="assets/img/${datos_foreach["imagen"]}" alt="${datos_foreach["titulo"]}">
+            <div>
+                <h3>${datos_foreach["titulo"]}</h3>
+                <p>${datos_foreach["descripcion"]}</p>
+            </div>
+        </article>
+    `;
+    } else {
+        datos_html += `
+        <article class="contenedor space-evenly align-center cards">
+            <div>
+                <h3>${datos_foreach["titulo"]}</h3>
+                <p>${datos_foreach["descripcion"]}</p>
+            </div>
             <img src="assets/img/${datos_foreach["imagen"]}" alt="${datos_foreach["titulo"]}">
         </article>
     `;
