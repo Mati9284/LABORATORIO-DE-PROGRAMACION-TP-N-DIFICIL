@@ -40,7 +40,7 @@ datos.forEach(datos_foreach => {
         <article class="contenedor column cards">
             <h3>${datos_foreach["titulo"]}</h3>
             <p>${datos_foreach["descripcion"]}</p>
-            <img src="assets/img/${datos_foreach["imagen"]}" alt="${datos_foreach["titulo"]}">
+            <img src="/assets/img/${datos_foreach["imagen"]}" alt="${datos_foreach["titulo"]}">
         </article>
     `;
     }
